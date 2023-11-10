@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu após Login</title>
+</head>
+<body>
+
+<div id="app">
+    <div id="login-container" class="container">
+        <h2>Login</h2>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" placeholder="Digite seu usuário">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" placeholder="Digite sua senha">
+        <button onclick="realizarLogin()">Entrar</button>
+    </div>
+
+    <div id="menu-container" class="container" style="display: none;">
+        <h2>Bem-vindo!</h2>
+        <button onclick="exibirPerfil()">Ver Perfil</button>
+        <button onclick="exibirConfiguracoes()">Configurações</button>
+        <button onclick="sair()">Sair</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
